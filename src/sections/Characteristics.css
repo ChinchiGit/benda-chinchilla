@@ -1,0 +1,44 @@
+.characteristics {
+  padding: 40px 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.characteristics h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.characteristic-section {
+  margin-bottom: 20px;
+}
+
+.characteristic-section h3 {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.characteristic-section h3:hover {
+  background-color: var(--primary-color);
+}
+
+.characteristic-details {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+}
+
+.characteristic-item {
+  margin-bottom: 10px;
+}
+
+.characteristic-key {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.characteristic-value {
+  color: var(--text-color);
+}

@@ -1,0 +1,60 @@
+.header {
+  background-color: var(--secondary-color);
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.header.scrolled {
+  background-color: rgba(34, 31, 31, 0.9);
+  padding: 5px 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: auto;
+  height: 2rem; /* Tamaño más grande antes del scroll */
+  transition: all 0.3s ease; /* Transición suave para cambios de tamaño y sombra */
+  
+}
+
+.header.scrolled .logo {
+  height: 1.5rem; /* Tamaño más pequeño después del scroll */
+}
+
+.logo:hover {
+  filter: drop-shadow(2px 2px 4px var(--primary-color)); /* Sombra del color primario al pasar el ratón */
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover {
+  color: var(--primary-color);
+}

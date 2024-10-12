@@ -1,0 +1,44 @@
+.blog {
+  padding: 40px 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blog h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.blog-posts {
+  display: grid;
+  gap: 30px;
+}
+
+.blog-post {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.blog-post h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+.post-date {
+  font-style: italic;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}

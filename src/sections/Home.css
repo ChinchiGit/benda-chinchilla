@@ -1,0 +1,48 @@
+.home {
+  padding-top: 60px;
+}
+
+.hero {
+  background-image: url('https://www.motostarragona.com/cdn/shop/files/benda-espana-benda-chinchilla-500-promociones-benda-motos-tarragona-concesionario-oficial-benda-tarragona-reus-girona-lleida-barcelona-oferta-19_2048x.jpg?v=1718709433');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 50%;
+  padding-left: 5%;
+  text-align: left;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.content {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.content h3 {
+  margin-top: 2rem;
+}
+
+.content ul {
+  padding-left: 20px;
+}
+
+.content li {
+  margin-bottom: 10px;
+}
