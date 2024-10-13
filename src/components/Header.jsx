@@ -5,6 +5,7 @@ import './Header.css';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado para el menú hamburguesa
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,13 +16,22 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen); // Alternar el estado del menú
+  };
+
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container">
+        <div className='nav-buttons'>
         <Link to="home" smooth={true} duration={500}>
           <img src={chinchillaLogo} alt="Benda Chinchilla 500" className="logo" />
         </Link>
-        <nav>
+        <button className="menu-toggle" onClick={toggleMenu}>
+          ≡
+        </button>
+        </div>
+        <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
           <ul>
             <li><Link to="home" smooth={true} duration={500}>INICIO</Link></li>
             <li><Link to="photos" smooth={true} duration={500}>FOTOS</Link></li>
