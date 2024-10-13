@@ -10,7 +10,8 @@
 }
 
 .photos img {
-  max-width: 1080px;
+  max-width: 100%; /* Asegura que la imagen no desborde su contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
   margin: 0 auto;
 }
 
@@ -34,3 +35,19 @@
 .slick-dots li button:before {
   color: var(--text-color);
 }  
+
+@media (max-width: 768px) {
+  .photos {
+    padding: 20px 0; /* Reduce el padding en pantallas más pequeñas */
+  }
+
+  .photos h2 {
+    font-size: 1.5rem; /* Ajusta el tamaño de la fuente del título */
+  }
+}
+
+@media (max-width: 480px) {
+  .photos h2 {
+    font-size: 1.2rem; /* Reduce aún más el tamaño de la fuente del título */
+  }
+}
