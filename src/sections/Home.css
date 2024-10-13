@@ -46,3 +46,72 @@
 .content li {
   margin-bottom: 10px;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    background-size: cover; /* Asegura que la imagen de fondo cubra el área */
+    background-position: right; /* Ajusta la posición de la imagen de fondo */
+    height: 60vh; /* Ajusta la altura para tablets */
+    align-items: flex-start; /* Centra el contenido verticalmente */
+    justify-content: center
+  }
+
+  .hero-content {
+    max-width: 70%; /* Ajusta el ancho máximo del contenido */
+    padding-left: 5%; /* Ajusta el padding para centrar el contenido */
+    text-align: center; /* Alinea el texto a la izquierda */
+  }
+
+  .hero h1 {
+    font-size: 2.8rem; /* Ajusta el tamaño de la fuente */
+  }
+
+  .hero h2 {
+    font-size: 1.4rem; /* Ajusta el tamaño de la fuente */
+  }
+
+  .content {
+    padding: 0 15px; /* Ajusta el padding lateral */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-size: cover; /* Asegura que la imagen de fondo cubra el área */
+    background-position: right; /* Ajusta la posición de la imagen de fondo */
+    height: 60vh; /* Reduce la altura para pantallas más pequeñas */
+    align-items: flex-start; /* Alinea el contenido en la parte superior */
+  }
+
+  .hero-content {
+    max-width: 80%; /* Aumenta el ancho máximo del contenido */
+    padding-left: 10%; /* Ajusta el padding para centrar el contenido */
+    text-align: center; /* Centra el texto */
+  }
+
+  .hero h1 {
+    font-size: 2.5rem; /* Reduce el tamaño de la fuente */
+  }
+
+  .hero h2 {
+    font-size: 1.2rem; /* Reduce el tamaño de la fuente */
+  }
+
+  .content {
+    padding: 0 10px; /* Reduce el padding lateral */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 50vh; /* Reduce aún más la altura para pantallas muy pequeñas */
+  }
+
+  .hero h1 {
+    font-size: 2rem; /* Reduce el tamaño de la fuente */
+  }
+
+  .hero h2 {
+    font-size: 1rem; /* Reduce el tamaño de la fuente */
+  }
+}
