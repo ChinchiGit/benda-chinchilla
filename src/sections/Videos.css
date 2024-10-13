@@ -17,14 +17,17 @@
 .video-item {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  width: 300px; /* Ajusta el ancho para pantallas más grandes */
-  transition: transform 0.3s ease; /* Añadir transición para el hover */
+  width: 300px;
+  /* Ajusta el ancho para pantallas más grandes */
+  transition: transform 0.3s ease;
+  /* Añadir transición para el hover */
 }
 
 .video-thumbnail {
   border-radius: 10px 10px 0px 0px;
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
   overflow: hidden;
 }
 
@@ -43,40 +46,66 @@
 }
 
 .video-item h3 {
-  margin-top: 20px; /* Aumenta el margen superior */
-  font-size: 1.1rem; /* Aumenta el tamaño de la fuente */
+  margin-top: 20px;
+  /* Aumenta el margen superior */
+  font-size: 1.1rem;
+  /* Aumenta el tamaño de la fuente */
   text-align: center;
-  padding: 0 10px; /* Añadir padding lateral */
+  padding: 0 10px;
+  /* Añadir padding lateral */
 }
 
 .video-item:hover {
-  transform: scale(1.05); /* Aumenta el tamaño del div al hacer hover */
+  transform: scale(1.05);
+  /* Aumenta el tamaño del div al hacer hover */
 }
 
 #logo {
   display: block;
-  margin: 20px auto; /* Centra el logo */
+  margin: 20px auto;
+  /* Centra el logo */
   height: 2rem;
   opacity: 0.3;
 }
 
 @media (max-width: 768px) {
   .video-item {
-    width: 100%; /* Ajusta el ancho para pantallas más pequeñas */
-    max-width: 300px; /* Limita el ancho máximo */
+    width: 100%;
+    /* Ajusta el ancho para pantallas más pequeñas */
+    max-width: 300px;
+    /* Limita el ancho máximo */
+  }
+
+  .videos h2 {
+    font-size: 1.5rem;
+    /* Ajusta el tamaño de la fuente del título */
   }
 
   #logo {
-    height: 1.5rem; /* Ajusta el tamaño del logo en pantallas pequeñas */
+    height: 1.5rem;
+    /* Ajusta el tamaño del logo en pantallas pequeñas */
+  }
+
+  .video-item h3 {
+    font-size: 1rem;
+    /* Ajusta el tamaño de la fuente del título */
   }
 }
 
 @media (max-width: 480px) {
+
+  .videos h2 {
+    font-size: 1.5rem;
+    /* Ajusta el tamaño de la fuente del título */
+  }
+
   .video-item h3 {
-    font-size: 0.9rem; /* Reduce el tamaño de la fuente del título */
+    font-size: 0.9rem;
+    /* Reduce el tamaño de la fuente del título */
   }
 
   #logo {
-    height: 1rem; /* Ajusta aún más el tamaño del logo */
+    height: 1rem;
+    /* Ajusta aún más el tamaño del logo */
   }
 }
