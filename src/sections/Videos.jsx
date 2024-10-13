@@ -16,13 +16,6 @@ const Videos = () => {
     threshold: 0.1,
   });
   
-
-  // useEffect(() => {
-  //   if (inView) {
-  //     ref.current.classList.add('is-visible');
-  //   }
-  // }, [inView, ref]);
-
   return (
     <section id="videos" className={`videos animate-on-scroll ${inView ? 'is-visible' : ''}`}  ref={ref}>
       <h2>Videos</h2>
@@ -30,10 +23,7 @@ const Videos = () => {
         {videos.map((video) => (
           <div key={video.id} className="video-item">
             <div className="video-thumbnail">
-              <img
-                src={`https://img.youtube.com/vi/${video.id}/0.jpg`}
-                alt={video.title}
-              />
+
               <div className="video-overlay">
                 <iframe
                   width="100%"
