@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
-import chinchillaLogo from '../assets/chinchilla.svg'; // Asegúrate de que la ruta sea correcta
 import './Videos.css';
 
 const videos = [
@@ -47,7 +46,7 @@ const Videos = () => {
               </div>
             </div>
             <h3>{video.title}</h3>
-            <img id="logo" src={chinchillaLogo} alt="Logo Chinchilla" />
+            <img id="logo" src="src\assets\chinchilla.svg" alt="Logo Chinchilla" />
           </div>
         ))}
       </div>
