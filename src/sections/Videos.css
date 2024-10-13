@@ -6,65 +6,6 @@
   text-align: center;
   margin-bottom: 20px;
 }
-.videos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.video-thumbnail {
-  border-radius: 10px;
-  background-image: url('../assets/foto_cv_chinchilla.jpg');
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 10px;
-  padding: 20px;
-  width: 300px;
-  box-sizing: border-box;
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-
-.video-thumbnail:hover {
-  transform: scale(1.05);
-}
-
-.video-thumbnail img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  opacity: 0.8;
-}
-
-.video-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.video-thumbnail:hover .video-overlay {
-  opacity: 1;
-}
-
-.video-item{
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 10px; 
-
-}
-
-.video-item h3 {
-  
-  margin-top: 10px;
-  font-size: 1rem;
-  color: var(--text-color);
-  text-align: center;
-}
 
 .video-grid {
   display: flex;
@@ -74,11 +15,14 @@
 }
 
 .video-item {
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  padding-bottom: 10px;
+  width: 300px; /* Ajusta el ancho para pantallas más grandes */
+  transition: transform 0.3s ease; /* Añadir transición para el hover */
 }
 
 .video-thumbnail {
+  border-radius: 10px 10px 0px 0px;
   position: relative;
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   overflow: hidden;
@@ -113,13 +57,40 @@
 }
 
 .video-item h3 {
-  margin-top: 10px;
-  font-size: 1rem;
+  margin-top: 20px; /* Aumenta el margen superior */
+  font-size: 1.1rem; /* Aumenta el tamaño de la fuente */
+  text-align: center;
+  padding: 0 10px; /* Añadir padding lateral */
+}
+
+.video-item:hover {
+  transform: scale(1.05); /* Aumenta el tamaño del div al hacer hover */
 }
 
 #logo {
   display: block;
-  margin: 0 auto;
+  margin: 20px auto; /* Centra el logo */
   height: 2rem;
-  opacity: 0.08;
+  opacity: 0.3;
+}
+
+@media (max-width: 768px) {
+  .video-item {
+    width: 100%; /* Ajusta el ancho para pantallas más pequeñas */
+    max-width: 300px; /* Limita el ancho máximo */
+  }
+
+  #logo {
+    height: 1.5rem; /* Ajusta el tamaño del logo en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .video-item h3 {
+    font-size: 0.9rem; /* Reduce el tamaño de la fuente del título */
+  }
+
+  #logo {
+    height: 1rem; /* Ajusta aún más el tamaño del logo */
+  }
 }
