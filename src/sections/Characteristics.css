@@ -42,3 +42,50 @@
 .characteristic-value {
   color: var(--text-color);
 }
+
+@media (max-width: 850px) {
+  .characteristics {
+    max-width: 90%; /* Establece un ancho máximo del 90% en pantallas menores a 850px */
+  }
+}
+
+@media (max-width: 768px) {
+  .characteristics {
+    padding: 20px 0; /* Reduce el padding en pantallas más pequeñas */
+  }
+
+  .characteristic-section h3 {
+    font-size: 1.2rem; /* Ajusta el tamaño de la fuente del título */
+    padding: 8px; /* Reduce el padding */
+  }
+
+  .characteristic-details {
+    padding: 15px; /* Reduce el padding en detalles */
+  }
+
+  .characteristic-key {
+    font-size: 0.9rem; /* Ajusta el tamaño de la clave */
+  }
+
+  .characteristic-value {
+    font-size: 0.9rem; /* Ajusta el tamaño del valor */
+  }
+}
+
+@media (max-width: 480px) {
+  .characteristics h2 {
+    font-size: 1.5rem; /* Reduce el tamaño de la fuente del título principal */
+  }
+
+  .characteristic-section h3 {
+    font-size: 1rem; /* Reduce aún más el tamaño de la fuente del título */
+  }
+
+  .characteristic-key {
+    font-size: 0.8rem; /* Ajusta el tamaño de la clave */
+  }
+
+  .characteristic-value {
+    font-size: 0.8rem; /* Ajusta el tamaño del valor */
+  }
+}
