@@ -58,3 +58,86 @@ nav ul li a {
 nav ul li a:hover {
   color: var(--primary-color);
 }
+
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 5px 0; /* Reduce el padding en pantallas más pequeñas */
+  }
+
+  .header .container {
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    align-items: flex-start; /* Alinea los elementos al inicio */
+  }
+
+  .logo {
+    height: 1.5rem; /* Ajusta el tamaño del logo */
+  }
+
+  nav ul {
+    flex-direction: column; /* Cambia la dirección de la lista a columna */
+    width: 100%; /* Asegura que la lista ocupe el ancho completo */
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Espaciado vertical entre los elementos de la lista */
+    margin-left: 0; /* Elimina el margen izquierdo */
+    width: 100%; /* Asegura que cada elemento ocupe el ancho completo */
+    text-align: center; /* Centra el texto de los enlaces */
+  }
+
+  nav ul li a {
+    font-size: 16px; /* Aumenta el tamaño de la fuente para mejor legibilidad */
+  }
+
+  .menu-toggle {
+    display: block; /* Mostrar el botón en pantallas pequeñas */
+  }
+
+  nav {
+    display: none; /* Ocultar el menú por defecto */
+    flex-direction: column; /* Cambiar a columna */
+    align-items: center; /* Centrar los elementos */
+    width: 100%; /* Asegurar que el menú ocupe el ancho completo */
+  }
+
+  nav.open {
+    display: flex; /* Mostrar el menú cuando está abierto */
+  }
+
+  nav ul {
+    flex-direction: column; /* Cambiar la dirección de la lista a columna */
+    width: 100%; /* Asegurar que la lista ocupe el ancho completo */
+    padding: 0; /* Sin padding */
+    margin: 0; /* Sin margen */
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Espaciado vertical entre los elementos de la lista */
+    text-align: center; /* Centrar el texto de los enlaces */
+  }
+
+  .nav-buttons {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos a los extremos */
+    align-items: center; /* Alinea verticalmente los elementos */
+    width: 100%; /* Asegura que el contenedor ocupe el ancho completo */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 3px 0; /* Reduce aún más el padding en pantallas muy pequeñas */
+  }
+
+  .logo {
+    height: 1.2rem; /* Ajusta el tamaño del logo para pantallas pequeñas */
+  }
+
+  nav ul li a {
+    font-size: 14px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+  }
+}
