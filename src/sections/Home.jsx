@@ -10,7 +10,7 @@ const Home = () => {
 
   return (
     <section id="home"  className={`home animate-on-scroll ${inView ? 'is-visible' : ''}`} ref={ref}>
-      <div className="hero">
+      <div className="hero" data-testid="hero">
         <div className="hero-content">
           <h1>La Benda Chinchilla 500</h1>
           <h2>Una moto con el mejor apellido</h2>
