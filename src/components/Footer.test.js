@@ -15,7 +15,7 @@ test('renders footer with developer info, LinkedIn link, and GitHub link', () =>
   expect(linkedInLink).toHaveAttribute('href', 'http://www.linkedin.com/in/c-chinchilla');
   expect(linkedInLink).toHaveAttribute('target', '_blank'); // Verificar que se abra en nueva ventana
 
-  // Verificar que el enlace de GitHub esté presente
+  // Verificar que el enlace de GitHub esté presente cosas
   const githubLink = screen.getByRole('link', { name: /GitHub/i });
   expect(githubLink).toBeInTheDocument();
   expect(githubLink).toHaveAttribute('href', 'https://github.com/ChinchiGit');
