@@ -1,12 +1,11 @@
 import React from 'react';
-import { render, screen, waitFor, act } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import Home from './Home';
 
 describe('Home Component', () => {
   test('renders home section with title and subtitle', async () => {
     render(<Home />);
     
-    // Esperar a que el componente sea visible
     await waitFor(() => {
       const title = screen.getByText('La Benda Chinchilla 500');
       const subtitle = screen.getByText('Una moto con el mejor apellido');
@@ -33,5 +32,4 @@ describe('Home Component', () => {
       expect(featureItem).toBeInTheDocument();
     });
   });
-
 });

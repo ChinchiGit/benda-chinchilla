@@ -34,9 +34,7 @@ describe('Characteristics Component', () => {
     const details = screen.getByText('Bicilíndrico V-Twin de 4 tiempos y 4 válvulas por cilindro. OHC');
     expect(details).toBeInTheDocument();
 
-    // Click again to collapse the section
     fireEvent.click(sectionTitle);
     expect(details).not.toBeVisible();
   });
 });
-

@@ -6,7 +6,6 @@ describe('Videos Component', () => {
   test('renders the videos section with title', () => {
     render(<Videos />);
     
-    // Verificar que el título de la sección de videos esté presente
     const title = screen.getByText('Videos');
     expect(title).toBeInTheDocument();
   });
@@ -14,11 +13,9 @@ describe('Videos Component', () => {
   test('renders all video items', () => {
     render(<Videos />);
     
-    // Verificar que se renderizan todos los videos
     const videoItems = screen.getAllByRole('heading', { level: 3 });
-    expect(videoItems.length).toBe(4); // Debe haber 4 videos
+    expect(videoItems.length).toBe(4);
 
-    // Verificar que los títulos de los videos están presentes
     const videoTitles = [
       'Benda Chinchilla 500 Review',
       'Benda Chinchilla 500 Test Ride',
@@ -34,10 +31,8 @@ describe('Videos Component', () => {
   test('applies correct styles', () => {
     const { container } = render(<Videos />);
     
-    // Verificar que la sección tiene la clase 'videos'
     const videosSection = container.querySelector('.videos');
     expect(videosSection).toBeInTheDocument();
-    expect(videosSection.classList.contains('videos')).toBe(true); // Verificar la clase aplicada
+    expect(videosSection.classList.contains('videos')).toBe(true);
   });
 });
-

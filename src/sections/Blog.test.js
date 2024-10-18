@@ -6,11 +6,9 @@ describe('Blog Component', () => {
   test('renders blog section with posts', () => {
     render(<Blog />);
 
-    // Verificar que el título del blog esté presente
     const blogTitle = screen.getByText('Blog');
     expect(blogTitle).toBeInTheDocument();
 
-    // Verificar que las publicaciones del blog estén presentes
     const posts = [
       'Benda Chinchilla 500: La nueva sensación en el mundo de las custom',
       'Comparativa: Benda Chinchilla 500 vs. Competidores',
@@ -23,9 +21,7 @@ describe('Blog Component', () => {
       expect(post).toBeInTheDocument();
     });
 
-    // Verificar que el enlace "Leer más" esté presente en cada publicación
     const readMoreLinks = screen.getAllByText('Leer más');
-    expect(readMoreLinks.length).toBe(posts.length); // Debe haber un enlace "Leer más" por cada publicación
+    expect(readMoreLinks.length).toBe(posts.length);
   });
 });
-
