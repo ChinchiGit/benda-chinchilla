@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import './Characteristics.css';
 
