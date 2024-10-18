@@ -6,7 +6,7 @@ import Photos from './sections/Photos';
 import Videos from './sections/Videos';
 import Characteristics from './sections/Characteristics';
 import Blog from './sections/Blog';
-import './App.css';
+
 
 function App() {
   return (
