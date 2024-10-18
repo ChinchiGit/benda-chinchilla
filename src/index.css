@@ -20,6 +20,13 @@ body {
   padding: 0 20px;
 }
 
+section {
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+
+}
+
 h2 {
   text-align: center;
   margin-bottom: 40px;
