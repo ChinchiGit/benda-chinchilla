@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-import chinchillaLogo from '../assets/chinchilla.svg'; // Asegúrate de que la ruta sea correcta
+import chinchillaLogo from '../assets/chinchilla.svg'; 
 import './Header.css';
 
 const Header = () => {
