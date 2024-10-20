@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-import chinchillaLogo from '../assets/chinchilla.svg'; // Asegúrate de que la ruta sea correcta
+import chinchillaLogo from '../assets/chinchilla.svg'; 
 import './Header.css';
 
 const Header = () => {
@@ -27,7 +27,7 @@ const Header = () => {
         <Link to="home" smooth={true} duration={500}>
           <img src={chinchillaLogo} alt="Benda Chinchilla 500" className="logo" />
         </Link>
-        <button className="menu-toggle" onClick={toggleMenu}>
+        <button className="menu-toggle" onClick={toggleMenu} aria-label="Toggle menu">
           ≡
         </button>
         </div>

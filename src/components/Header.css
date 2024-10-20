@@ -53,6 +53,7 @@ nav ul li a {
   letter-spacing: 1px;
   transition: color 0.3s ease;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 nav ul li a:hover {
@@ -141,3 +142,4 @@ nav ul li a:hover {
     font-size: 14px; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
   }
 }
+
